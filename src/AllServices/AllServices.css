@@ -1,0 +1,12 @@
+.sort-horizontal {
+  display: flex;
+  flex-direction: raw;
+  color: darkred;
+}
+
+.sort-vertical {
+  display: flex;
+  flex-direction: column;
+  color: blue;
+  width: 25%;
+}
