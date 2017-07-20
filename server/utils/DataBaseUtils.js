@@ -10,7 +10,7 @@ export function setUpConnection() {
     mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);
 }
 
-export function listUsers(id) {
+export function listUsers() {
     return User.find();
 }
 
