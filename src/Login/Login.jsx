@@ -1,10 +1,14 @@
 //import './Login.scss'
 //import './login2.css'
 
-import { Link } from 'react-router-dom'
-import { Route } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
+//import { Route } from 'react-router-dom'
+
+//import mongoose from 'mongoose';
+//import '../Models/User';
 
 import React from "react";
+
 
 export default class Login extends React.Component {
 
@@ -32,6 +36,26 @@ export default class Login extends React.Component {
         {
             this.setState({userName: "", password: "", attempt: this.state.attempt + 1});
         }
+
+        /*
+        mongoose.connect('mongodb://localhost:27017/mydb');
+        const Schema = mongoose.Schema;
+
+        const UserSchema = new Schema({
+            userName     : { type: String },
+            password     : { type: String }
+        });
+
+        const User = mongoose.model('User', UserSchema);
+        //User.find();
+
+        const user = new User({
+            userName: "rodion",
+            password: "123,"
+        });
+
+        user.save();
+        */
 
     }
 
