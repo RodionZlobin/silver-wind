@@ -15,7 +15,7 @@ export function listUsers() {
 }
 
 export function createUser(data) {
-    const user = new Note({
+    const user = new User({
         username: data.username,
         password: data.password
     });
